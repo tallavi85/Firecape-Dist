@@ -57,7 +57,7 @@ var CalcRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg\">\n  <a class=\"navbar-brand\" href=\"#\"><img src=\"./assets/logos/firecape.png\" /></a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li style=\"line-height: 40px\" class=\"nav-item active\">\n        <a routerLink=\"\" class=\"nav-link\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li style=\"line-height: 40px\" class=\"\">\n        <a class=\"nav-link activey\">Prices</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"floatSoc\">\n<a href=\"skype:live:anteswede95/?add\"><img src=\"../../../assets/logos/skype.png\"></a>\n    <br>\n<a  href=\"https://discord.gg/qv2ak8\"><img src=\"../../../assets/logos/discord.png\"></a>\n    <br>\n    <a  href=\"https://www.sythe.org/threads/25-donor-1-anteswedes-1-31-prayer-firecape-service-firecapes-com-10hp-1-pray-free-jad/\"><img src=\"../../../assets/logos/sythe.png\"></a>\n    <br>\n</div>\n<div class=\"container-fluid\">\n    \n    <h1>Enter your levels</h1>\n    <div class=\"row\">\n        <div class=\"contentCalculator\">\n        <div class=\"col\" style=\"margin-top: 1%; margin-bottom: 1%\">\n        <span><img src=\"../../../assets/logos/range.png\" style=\"margin-right: 5px;\">Ranged Level: <span class=\"levels\" #levelindx >50</span></span>\n          <input #slidex id=\"rangedSlider\" class=\"slider\" value=\"50\" min=\"50\" max=\"99\" (input)=\"updateRange(slidex.value); levelindx.innerText = slidex.value; pricey.innerText = getPrice()\" type=\"range\" />\n        \n        \n        </div>\n           <hr> \n        <div class=\"col\" style=\"margin-top: 1%; margin-bottom: 1%\">\n        <span><img src=\"../../../assets/logos/hp.png\" style=\"margin-right: 5px;\">Hitpoints: <span class=\"levels\" #levelindx2 >50</span></span>\n          <input #slidex2 id=\"rangedSlider\" class=\"slider\" value=\"50\" min=\"10\" max=\"99\" (input)=\"updateHP(slidex2.value); levelindx2.innerText = slidex2.value; pricey.innerText = getPrice()\" type=\"range\" />\n        \n        \n        </div>\n            <hr>\n        <div class=\"col\" style=\"margin-top: 1%; margin-bottom: 1%\">\n        <span><img src=\"../../../assets/logos/defence.png\" style=\"margin-right: 5px;\">Defence Level: <span class=\"levels\" #levelindx3 >1</span></span>\n          <input #slidex3 id=\"rangedSlider\" class=\"slider\" value=\"1\" min=\"1\" max=\"99\" (input)=\"updateDef(slidex3.value); levelindx3.innerText = slidex3.value; pricey.innerText = getPrice()\" type=\"range\" />\n        \n        \n        </div>\n            <hr>\n            \n        <div class=\"col\" style=\"margin-top: 1%; margin-bottom: 1%\">\n            <div class=\"inputGroup\">\n    <input #pray (change)=\"updatePray(pray.checked); pricey.innerText = getPrice()\" id=\"option1\" name=\"option1\" type=\"checkbox\"/>\n    <label for=\"option1\"><img src=\"../../../assets/logos/pray.png\" style=\"margin-right: 5px\">43+ Prayer</label>\n  </div>\n        \n        \n        </div>\n        </div>\n    </div>\n\n    <h2 id=\"pricey\" #pricey></h2>\n    <hr>\n    <h2>Supplies and gear will be provided</h2>\n\n</div>"
+module.exports = "<nav class=\"navbar navbar-expand-lg\">\n  <a class=\"navbar-brand\" href=\"#\"><img src=\"./assets/logos/firecape.png\" /></a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li style=\"line-height: 40px\" class=\"nav-item active\">\n        <a routerLink=\"\" class=\"nav-link\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li style=\"line-height: 40px\" class=\"\">\n        <a class=\"nav-link activey\">Prices</a>\n      </li>\n        <li style=\"line-height: 40px\" class=\"nav-item active\">\n        <a style=\"vertical-align: middle\" href=\"https://www.holycherrys.com/\" class=\"nav-link\">Inferno Service</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"floatSoc\">\n<a href=\"skype:live:anteswede95/?add\"><img src=\"../../../assets/logos/skype.png\"></a>\n    <br>\n<a  href=\"https://discord.gg/qv2ak8\"><img src=\"../../../assets/logos/discord.png\"></a>\n    <br>\n    <a  href=\"https://www.sythe.org/threads/25-donor-1-anteswedes-1-31-prayer-firecape-service-firecapes-com-10hp-1-pray-free-jad/\"><img src=\"../../../assets/logos/sythe.png\"></a>\n    <br>\n</div>\n<div class=\"container-fluid\">\n    \n    <h1>Enter your levels</h1>\n    <div class=\"row\">\n        <div class=\"contentCalculator\">\n        <div class=\"col\" style=\"margin-top: 1%; margin-bottom: 1%\">\n        <span><img src=\"../../../assets/logos/range.png\" style=\"margin-right: 5px;\">Ranged Level: <span class=\"levels\" #levelindx >50</span></span>\n          <input #slidex id=\"rangedSlider\" class=\"slider\" value=\"50\" min=\"50\" max=\"99\" (input)=\"updateRange(slidex.value); levelindx.innerText = slidex.value; pricey.innerText = getPrice()\" type=\"range\" />\n        \n        \n        </div>\n           <hr> \n        <div class=\"col\" style=\"margin-top: 1%; margin-bottom: 1%\">\n        <span><img src=\"../../../assets/logos/hp.png\" style=\"margin-right: 5px;\">Hitpoints: <span class=\"levels\" #levelindx2 >50</span></span>\n          <input #slidex2 id=\"rangedSlider\" class=\"slider\" value=\"50\" min=\"10\" max=\"99\" (input)=\"updateHP(slidex2.value); levelindx2.innerText = slidex2.value; pricey.innerText = getPrice()\" type=\"range\" />\n        \n        \n        </div>\n            <hr>\n        <div class=\"col\" style=\"margin-top: 1%; margin-bottom: 1%\">\n        <span><img src=\"../../../assets/logos/defence.png\" style=\"margin-right: 5px;\">Defence Level: <span class=\"levels\" #levelindx3 >1</span></span>\n          <input #slidex3 id=\"rangedSlider\" class=\"slider\" value=\"1\" min=\"1\" max=\"99\" (input)=\"updateDef(slidex3.value); levelindx3.innerText = slidex3.value; pricey.innerText = getPrice()\" type=\"range\" />\n        \n        \n        </div>\n            <hr>\n            \n        <div class=\"col\" style=\"margin-top: 1%; margin-bottom: 1%\">\n            <div class=\"inputGroup\">\n    <input #pray (change)=\"updatePray(pray.checked); pricey.innerText = getPrice()\" id=\"option1\" name=\"option1\" type=\"checkbox\"/>\n    <label for=\"option1\"><img src=\"../../../assets/logos/pray.png\" style=\"margin-right: 5px\">43+ Prayer</label>\n  </div>\n        \n        \n        </div>\n        </div>\n    </div>\n\n    <h2 id=\"pricey\" #pricey></h2>\n    <hr>\n    <h2>Supplies and gear will be provided</h2>\n\n</div>"
 
 /***/ }),
 
@@ -114,9 +114,9 @@ var CalcComponent = /** @class */ (function () {
     };
     CalcComponent.prototype.getPrice = function () {
         if (!this.pray) {
-            if (this.hp < 50) {
+            if (this.hp < 30) {
                 if (this.range < 75) {
-                    return "Please contact us for 10-50 HP with less than 75 range";
+                    return "Please contact us for 10-30 HP with less than 75 range";
                 }
                 else if (this.range < 85) {
                     return "200M + 3000 Purple Sweets";
@@ -131,55 +131,67 @@ var CalcComponent = /** @class */ (function () {
                     return "130M + 3000 Purple Sweets";
                 }
             }
-            if (this.range < 61) {
-                return "300M + 5000 Purple Sweets";
+            if (this.range < 60) {
+                return "Please contact us for below 43 prayer with less than 60 range";
             }
             else if (this.range < 70) {
-                return "110M + 3500 Purple Sweets";
+                return "180M + 3500 Purple Sweets";
             }
             else if (this.range < 75) {
-                return "85M + 3000 Purple Sweets";
+                return "140M + 3000 Purple Sweets";
             }
             else if (this.range < 85) {
-                return "75M + 2500 Purple Sweets";
+                return "95M + 2500 Purple Sweets";
             }
             else if (this.range < 90) {
-                return "65M + 2500 Purple Sweets";
+                return "85M + 2500 Purple Sweets";
             }
             else if (this.range < 96) {
-                return "55M + 2500 Purple Sweets";
+                return "75M + 2500 Purple Sweets";
             }
             else {
-                return "49M + 2500 Purple Sweets";
+                return "65M + 2500 Purple Sweets";
             }
         }
         else {
-            if (this.def < 44) {
-                if (this.range < 70) {
-                    return "20M";
+            if (this.def < 45) {
+                if (this.range < 61) {
+                    return "35M";
+                }
+                else if (this.range < 70) {
+                    return "25M";
                 }
                 else if (this.range < 75) {
-                    return "15M";
+                    return "20M";
                 }
                 else if (this.range < 85) {
-                    return "11M";
+                    return "15M";
+                }
+                else if (this.range < 90) {
+                    return "10M";
                 }
                 else {
                     return "8.5M";
                 }
             }
             else {
-                if (this.range < 70) {
-                    return "15M";
+                if (this.range < 61) {
+                    return "25M";
+                }
+                else if (this.range < 70) {
+                    return "20M";
                 }
                 else if (this.range < 75) {
-                    return "10M";
+                    return "15M";
                 }
                 else if (this.range < 85) {
-                    return "8M";
+                    return "10M";
+                }
+                else if (this.range < 90) {
+                    return "8.5M";
                 }
                 else {
-                    return "5M";
+                    return "6M";
                 }
             }
         }
@@ -205,7 +217,7 @@ var CalcComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg\">\n  <a class=\"navbar-brand\" href=\"#\"><img src=\"./assets/logos/firecape.png\" /></a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n       <li style=\"line-height: 40px\" class=\"\">\n        <a class=\"nav-link activey\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li style=\"line-height: 40px\" class=\"nav-item active\">\n        <a style=\"vertical-align: middle\" routerLink=\"pricing\" class=\"nav-link\">Prices</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"floatSoc\">\n<a href=\"skype:live:anteswede95/?add\"><img src=\"../../../assets/logos/skype.png\"></a>\n    <br>\n<a  href=\"https://discord.gg/qv2ak8\"><img src=\"../../../assets/logos/discord.png\"></a>\n    <br>\n    <a  href=\"https://www.sythe.org/threads/25-donor-1-anteswedes-1-31-prayer-firecape-service-firecapes-com-10hp-1-pray-free-jad/\"><img src=\"../../../assets/logos/sythe.png\"></a>\n    <br>\n\n</div>\n<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"banner\">\n      <img src=\"./assets/banner.gif\" />\n    </div>\n  </div>\n    <a style=\"text-decoration: none\" routerLink=\"pricing\">\n<div class=\"priceButton\">\n    <h1>Prices</h1>\n</div>\n        </a>\n<h1>Previous Work</h1>\n<hr>\n  <div class=\"row\">\n    <div class=\"images\">\n      <div class=\"col\" *ngFor=\"let image of images\">\n        <img class=\"image\" src=\"{{image}}\" width=\"25%\" />\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<nav class=\"navbar navbar-expand-lg\">\n  <a class=\"navbar-brand\" href=\"#\"><img src=\"./assets/logos/firecape.png\" /></a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n       <li style=\"line-height: 40px\" class=\"\">\n        <a class=\"nav-link activey\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li style=\"line-height: 40px\" class=\"nav-item active\">\n        <a style=\"vertical-align: middle\" routerLink=\"pricing\" class=\"nav-link\">Prices</a>\n      </li>\n        <li style=\"line-height: 40px\" class=\"nav-item active\">\n        <a style=\"vertical-align: middle\" href=\"https://www.holycherrys.com/\" class=\"nav-link\">Inferno Service</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"floatSoc\">\n<a href=\"skype:live:anteswede95/?add\"><img src=\"../../../assets/logos/skype.png\"></a>\n    <br>\n<a  href=\"https://discord.gg/qv2ak8\"><img src=\"../../../assets/logos/discord.png\"></a>\n    <br>\n    <a  href=\"https://www.sythe.org/threads/25-donor-1-anteswedes-1-31-prayer-firecape-service-firecapes-com-10hp-1-pray-free-jad/\"><img src=\"../../../assets/logos/sythe.png\"></a>\n    <br>\n\n</div>\n<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"banner\">\n      <img src=\"./assets/banner.gif\" />\n    </div>\n  </div>\n    <a style=\"text-decoration: none\" routerLink=\"pricing\">\n<div class=\"priceButton\">\n    <h1>Prices</h1>\n</div>\n        </a>\n<h1>Previous Work</h1>\n<hr>\n  <div class=\"row\">\n    <div class=\"images\">\n      <div class=\"col\" *ngFor=\"let image of images\">\n        <img class=\"image\" src=\"{{image}}\" width=\"25%\" />\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
